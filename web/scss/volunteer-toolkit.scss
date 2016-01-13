@@ -123,9 +123,13 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: white;
-    opacity: 0;
+    opacity: 0.4;
     @include compat(transition, 'opacity 0.2s');
     &:hover { opacity: 1; }
+
+    & > * {
+      vertical-align: middle;
+    }
   } // endof footer
 
 }

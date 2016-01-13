@@ -3,10 +3,18 @@
 <link href='https://fonts.googleapis.com/css?family=Neuton:400,700,800|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1619513324978096";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   <div id='main-container'>
     <div id='title-hero'>
       <h1 class='neuton'>Bernie's Volunteer Toolkit</h1>
-      <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to make Bernie the next president of these United States.<br/>Pick and choose, volunteer, feel the bern! Don't see your app? <a href='http://goo.gl/forms/ZFp8AUVTb0' target='_blank'>Submit it here.</a></h3>
+      <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to help make Bernie the next president of these United States.<br/>Take your pick, volunteer, feel the bern! Don't see your app? <a href='http://goo.gl/forms/ZFp8AUVTb0' target='_blank'>Submit it here.</a></h3>
     </div>
     <div id='filters'>
       <form id='toolkit-filters'>
@@ -35,7 +43,9 @@
     </div>
   </div>
   <footer class='lato'>
-    &copy; Bernie Volunteers 2016 &bull; This site is not affiliated with the official Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org'>rapi@bernie2016events.org</a> for questions / bugs
+    <div class="fb-share-button" data-href="http://www.bernkit.com/" data-layout="button"></div> <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.bernkit.com" data-text="All the online tools you can use to make Bernie the next president of these United States #feelthebern">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> <span>
+    &copy; Bernie Volunteers 2016 &bull; This site is not affiliated with the official Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org'>rapi@bernie2016events.org</a> for questions / bugs</span>
   </footer>
   <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script type='text/javascript' src='js/jquery.js'></script>

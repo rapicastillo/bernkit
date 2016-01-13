@@ -169,7 +169,7 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: white;
-    opacity: 0;
+    opacity: 0.4;
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
@@ -177,5 +177,7 @@ body {
     transition: opacity 0.2s; }
     body footer:hover {
       opacity: 1; }
+    body footer > * {
+      vertical-align: middle; }
 
 /*# sourceMappingURL=volunteer-toolkit.css.map */
