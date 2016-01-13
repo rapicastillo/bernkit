@@ -1,5 +1,11 @@
 <!doctype html>
+
 <meta charset="UTF-8">
+<title>Bernie's Volunteer Toolkit - All the online tools you can use to help make Bernie the next president of these United States. Pick and choose, volunteer, feel the bern! Don't see your app?</title>
+<meta property="og:image" content="http://www.bernkit.com/img/fb.png" />
+<meta property="og:url" content="http://www.bernkit.com" />
+<meta property="og:title" content="Bernie's Volunteer Toolkit"/>
+<meta property="og:description" content="Bernie's Volunteer Toolkit - BernKit - All the online tools you can use to help make Bernie the next president of these United States. Pick and choose, volunteer, feel the bern! Don't see your app?"/>
 <link href='https://fonts.googleapis.com/css?family=Neuton:400,700,800|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
 <body>
