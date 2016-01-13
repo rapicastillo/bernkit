@@ -155,7 +155,8 @@ body {
               text-decoration: underline; }
         body #canvas-area .item div.content p {
           line-height: 1.25;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          font-size: 14px; }
         body #canvas-area .item div.content a {
           color: #00559B;
           text-decoration: none; }
