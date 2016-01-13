@@ -96,7 +96,6 @@
             items.enter()
               .append("div").classed("item", true)
                 .html(function(d, i) {
-                  console.log("ENTERED :::", i);
                   var html = "<div class='site-image' style='background-image: url(" + d.image+ ")'><a class='lato' target='_blank' href='" + d.url +"'></a></div>"
                       + "<div class='content'>"
                       + "<h2 class='neuton'><a target='_blank' href='" +d.url+  "'>" + d.title + "</a></h2>"
