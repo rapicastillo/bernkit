@@ -1,0 +1,131 @@
+@import 'include/reset';
+@import 'include/mixins';
+@import 'include/variables';
+
+body {
+  background-color: whitesmoke;
+  .lato { font-family: 'Lato', sans-serif; }
+  .neuton { font-family: 'Neuton', serif; }
+
+  text-align: center;
+  #main-container {
+    width: 1100px;
+    text-align: left;
+    display: inline-block;
+  }
+
+  #title-hero {
+    text-align: center;
+    h1 { font-size: 72px; font-weight: 800;}
+    h3 { font-size: 24px; font-weight: 400; }
+  }
+  #filters {
+    margin-top: 20px;
+    text-align: center;
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+
+      input[type=radio] { display: none; }
+
+      label {
+        @include compat(transition, 'color .2s, background-color .2s, border-color .2s');
+        padding: 7px 15px 5px;
+        border: solid 4px transparent;
+        background-color: transparent;
+        color: #333333;
+        display: inline-block;
+        cursor: pointer;
+        @include compat(border-radius, '4px');
+        border-radius: 4px;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        &:hover {
+          background-color: $highlight;
+        }
+      }
+      input[type=radio]:checked + label, input[type=radio]:checked + label:hover {
+        background-color: $bernieblue;
+        color: white;
+        border-color: $darkblue;
+      }
+    }
+  } // end of filters
+
+  #canvas-area {
+    position: relative;
+    #loader {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+    }
+    .item {
+      @include compat(opacity, "0");
+
+      position: absolute;
+      display: inline-block;
+      @include calc(width, "25% - 20px");
+
+      box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+      border-radius: 7px 7px 3px 3px;
+      background-color: white;
+
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-top: 30px;
+
+      @include compat(transition, 'top .2s left .2s');
+
+      div.site-image {
+        width: 100%;
+        height: 160px;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 7px 7px 0 0;
+        a {
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      div.content {
+        padding: 5px 10px 10px;
+        background-color: #F7F7F7;
+        h2 {
+          font-size: 24px;
+          a {
+            text-decoration: none;
+            font-weight: 300;
+            color: $darkblue;
+
+            &:hover { text-decoration: underline; }
+          }
+        }
+        p { line-height: 1.25; margin-bottom: 10px;}
+        a { color: $darkblue; text-decoration: none; &:hover{ text-decoration: underline;} }
+      }
+    }
+  }// end of canvas-area
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+    opacity: 0;
+    @include compat(transition, 'opacity 0.2s');
+    &:hover { opacity: 1; }
+  } // endof footer
+
+}
