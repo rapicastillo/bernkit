@@ -1,6 +1,8 @@
 <!doctype html>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
 <title>Bernie's Volunteer Toolkit - All the online tools you can use to help make Bernie the next president of these United States. Pick and choose, volunteer, feel the bern! Don't see your app?</title>
 <meta property="og:image" content="http://www.bernkit.com/img/fb.png" />
 <meta property="og:url" content="http://www.bernkit.com" />
@@ -10,7 +12,8 @@
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
 <body>
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <script>
+  (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
@@ -50,10 +53,13 @@
   </div>
   <footer class='lato'>
     <div class="fb-share-button" data-href="http://www.bernkit.com/" data-layout="button"></div> <a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.bernkit.com" data-text="All the online tools you can use to make Bernie the next president of these United States #feelthebern">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> <span>
-    &copy; Bernie Volunteers 2016 &bull; This site is not affiliated with the official Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org'>rapi@bernie2016events.org</a> for questions / bugs</span>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<a href='http://www.berniesanders.com/donate' class='donate-button'>Donate</a>
+    <span>
+    &copy; <a href=''>Grassroots for Sanders 2016</a> &bull; <a href='https://docs.google.com/forms/d/1TMrM4xFagI7SqzSD5qr2VPGUlV9jopisNOnecYq9Cgc/viewform?edit_requested=true' target='_blank'>Join our Call Team</a> &bull; This site is not affiliated with Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org'>rapi@bernie2016events.org</a></span>
   </footer>
-  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="/js/d3.js" charset="utf-8"></script>
   <script type='text/javascript' src='js/jquery.js'></script>
   <script type='text/javascript' src='js/deparam.js'></script>
   <script type='text/javascript'>
@@ -62,7 +68,7 @@
     var VolunteerToolkit = function(initialFilter) {
       //initialFilter :: The filter that was inputted. If empty ignore
       this.DATA_URL = './data.php';
-      this._initialFilter = initialFilter;
+      this._currentFilter = initialFilter == undefined ? "All" : initialFilter;
 
       this.columnSize = 4; // Default
       this._initialized = false;
@@ -76,7 +82,21 @@
 
       this.render = function(filter) {
         var that = this;
-        if (!filter || filter == undefined) { filter = 'All'; }
+        if (!filter || filter == undefined) { filter = that._currentFilter; }
+        else { that._currentFilter = filter; }
+
+        //Setting columnSizes...
+        var $canvasArea = $("#canvas-area");
+        if ( $canvasArea.width() > 900 ) {
+          that.columnSize = 4;
+        } else if( $canvasArea.width() > 600 ) {
+          that.columnSize = 3;
+        } else {
+          that.columnSize = 2;
+        }
+        $canvasArea.attr("data-colcount", that.columnSize);
+
+
 
         // console.log(filter, that.data);
         var dataToShow = that.data;
@@ -139,7 +159,7 @@
           // console.log("%d ) ", ind, target, bottom);
 
           // assume that the column by this time has been chosen
-          var left = (target * ($("#canvas-area").width()/that.columnSize));
+          var left = (target * (100/that.columnSize));
 
           // console.log(">>>", left);
           // $(this).css({ top: (bottom+20)+"px", left: left+"px" });
@@ -154,15 +174,13 @@
           // } else {
             d3.select(this)
             .style("top", (bottom)+"px")
-            .style("left", left+"px");
-
-
-
-          // }
-
+            .style("left", left+"%");
 
           columns[target] = $(this).position().top + $(this).height() + 20;
-        });
+        }); // end of items.each()..
+
+        d3.select("#canvas-area").style("height", d3.max(columns) + "px");
+        console.log(d3.max(columns));
 
         that._initialized = true;
 
@@ -192,7 +210,7 @@
         },
         function(err,data) {
           that.data = data;
-          that.render(this._initialFilter);
+          that.render(this._currentFilter);
 
           d3.select("#loader").remove();
         });
@@ -223,18 +241,36 @@
     });
 
     $(window).on('hashchange', function() {
-      // console.log(window.location.hash.substring(1));
       var params = $.deparam(window.location.hash.substring(1));
-
       if (!window.Manager.toolkit) {
         window.Manager.toolkit = new window.VolunteerToolkit.toolkit(params.f);
       } else {
-        // console.log("XXX", params);
         window.Manager.toolkit.render(params.f);
       }
     });
-
     $(window).trigger("hashchange");
+
+    var rtime;
+    var timeout = false;
+    var delta = 200;
+
+    $(window).on('resize', function() {
+      rtime = new Date();
+      if (timeout === false) {
+        timeout = true;
+        setTimeout(resizeEnd, delta);
+      }
+    });
+
+    function resizeEnd() {
+      if (new Date() - rtime < delta) {
+        setTimeout(resizeEnd, delta);
+      } else {
+        timeout = false;
+        window.Manager.toolkit.render();
+      }
+    }
+
   })(jQuery, window);
   </script>
   <script>

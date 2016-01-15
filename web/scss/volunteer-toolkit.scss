@@ -7,12 +7,32 @@ body {
   .lato { font-family: 'Lato', sans-serif; }
   .neuton { font-family: 'Neuton', serif; }
 
+  a { text-decoration: none; color: $bernieblue;
+
+    &.donate-button {
+      background-color: #F55B5B;
+      color: white;
+      padding: 4px 8px 3px 8px;
+      border-radius: 3px;
+      font-weight: 600;
+
+      &:hover { background-color: #F10E0E; }
+    }
+
+  }
+
   text-align: center;
   #main-container {
     width: 1100px;
     text-align: left;
     display: inline-block;
+
+    @media only screen
+      and (max-width: 1100px) {
+        width: 100%;
+    }
   }
+
 
   #title-hero {
     text-align: center;
@@ -57,6 +77,8 @@ body {
 
   #canvas-area {
     position: relative;
+    padding-bottom: 80px;
+
     #loader {
       text-align: center;
       margin-top: 30px;
@@ -66,12 +88,21 @@ body {
       text-transform: uppercase;
 
     }
+    &[data-colcount="4"] .item {
+      @include calc(width, "25% - 20px");
+    }
+    &[data-colcount="3"] .item {
+      @include calc(width, "33% - 20px");
+    }
+    &[data-colcount="2"] .item {
+      @include calc(width, "50% - 20px");
+    }
+
     .item {
       @include compat(opacity, "0");
 
       position: absolute;
       display: inline-block;
-      @include calc(width, "25% - 20px");
 
       box-shadow: 0 2px 2px rgba(0,0,0,0.2);
       border-radius: 7px 7px 3px 3px;
@@ -132,4 +163,35 @@ body {
     }
   } // endof footer
 
+}
+
+@media only screen
+  and (max-width: 450px) {
+
+  body #canvas-area .item {
+  div.content {
+    h2 { font-size: 16px; }
+    p { font-size: 12px; }
+  }}
+
+  body #canvas-area .item div.site-image {
+    height: 100px;
+  }
+  body #title-hero h1 {
+    font-size: 28px;
+    font-weight:600;
+  }
+  body #title-hero h3 {
+      font-size: 16px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    br { display: none; }
+  }
+
+  body #filters ul li label { padding: 4px 5px 4px; font-size: 11px;}
+
+  body {
+    footer { position: relative; opacity: 1; }
+  }
 }
