@@ -96,9 +96,6 @@
         }
         $canvasArea.attr("data-colcount", that.columnSize);
 
-
-
-        // console.log(filter, that.data);
         var dataToShow = that.data;
         if ( filter != 'All' ) {
           dataToShow = dataToShow.filter(function(d) {
@@ -114,7 +111,6 @@
           });
         }
 
-        // console.log(dataToShow);
         // Append all items if necessary
         var items = d3.select("#canvas-area").selectAll("div.item")
             .data(dataToShow, function(d) { return d.url; }); /* set url as ID */
@@ -156,12 +152,8 @@
             }
           }
 
-          // console.log("%d ) ", ind, target, bottom);
-
           // assume that the column by this time has been chosen
           var left = (target * (100/that.columnSize));
-
-          // console.log(">>>", left);
           // $(this).css({ top: (bottom+20)+"px", left: left+"px" });
           // if (that._initialized) {
             d3.select(this)
@@ -180,11 +172,9 @@
         }); // end of items.each()..
 
         d3.select("#canvas-area").style("height", d3.max(columns) + "px");
-        console.log(d3.max(columns));
 
         that._initialized = true;
 
-        // console.log(items);
 
       };
 
@@ -227,7 +217,6 @@
     //React to filters
   })(jQuery);
 
-// console.log(window.VolunteerToolkit);
   window.Manager = {};
   (function($, window) {
     //listen to hashchange
@@ -242,6 +231,8 @@
 
     $(window).on('hashchange', function() {
       var params = $.deparam(window.location.hash.substring(1));
+
+      if (params.f) { $("input[name=f][id="+ params.f+"]").attr("checked", "checked"); }
       if (!window.Manager.toolkit) {
         window.Manager.toolkit = new window.VolunteerToolkit.toolkit(params.f);
       } else {
