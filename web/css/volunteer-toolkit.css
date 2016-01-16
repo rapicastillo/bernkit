@@ -195,17 +195,15 @@ body {
     bottom: 0;
     width: 100%;
     font-size: 11px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: white;
-    opacity: 0.4;
-    -webkit-transition: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    -ms-transition: opacity 0.2s;
-    transition: opacity 0.2s; }
-    body footer:hover {
-      opacity: 1; }
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: whitesmoke;
+    opacity: 1;
+    -webkit-box-shadow: 0 1px 9px rgba(0,0,0, 0.2);
+    -moz-box-shadow: 0 1px 9px rgba(0,0,0, 0.2);
+    -o-box-shadow: 0 1px 9px rgba(0,0,0, 0.2);
+    -ms-box-shadow: 0 1px 9px rgba(0,0,0, 0.2);
+    box-shadow: 0 1px 9px rgba(0,0,0, 0.2); }
     body footer > * {
       vertical-align: middle; }
 
@@ -236,6 +234,11 @@ body {
 
   body footer {
     position: relative;
-    opacity: 1; } }
+    opacity: 1;
+    -webkit-box-shadow: 0 1px 9px rgba(0,0,0, 0);
+    -moz-box-shadow: 0 1px 9px rgba(0,0,0, 0);
+    -o-box-shadow: 0 1px 9px rgba(0,0,0, 0);
+    -ms-box-shadow: 0 1px 9px rgba(0,0,0, 0);
+    box-shadow: 0 1px 9px rgba(0,0,0, 0); } }
 
 /*# sourceMappingURL=volunteer-toolkit.css.map */

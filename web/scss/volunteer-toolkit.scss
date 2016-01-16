@@ -151,12 +151,13 @@ body {
     bottom: 0;
     width: 100%;
     font-size: 11px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: white;
-    opacity: 0.4;
-    @include compat(transition, 'opacity 0.2s');
-    &:hover { opacity: 1; }
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: whitesmoke;
+    opacity: 1;
+    // @include compat(transition, 'opacity 0.2s');
+    // &:hover { opacity: 1; }
+    @include compat(box-shadow, '0 1px 9px rgba(0,0,0, 0.2)');
 
     & > * {
       vertical-align: middle;
@@ -192,6 +193,9 @@ body {
   body #filters ul li label { padding: 4px 5px 4px; font-size: 11px;}
 
   body {
-    footer { position: relative; opacity: 1; }
+    footer { position: relative; opacity: 1;
+          @include compat(box-shadow, '0 1px 9px rgba(0,0,0, 0)');
+
+     }
   }
 }
