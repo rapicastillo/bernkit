@@ -57,7 +57,7 @@
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <a href='http://www.berniesanders.com/donate' class='donate-button'>Donate</a>
     <span>&nbsp;&nbsp;&nbsp;
-    &copy; <a href='http://www.reddit.com/r/SandersForPresident' style='display: inline-block'>Grassroots for Sanders 2016</a> &bull; <a href='https://docs.google.com/forms/d/1TMrM4xFagI7SqzSD5qr2VPGUlV9jopisNOnecYq9Cgc/viewform?edit_requested=true' target='_blank' style='display: inline-block'>Join our Call Team</a> &bull; This site is not affiliated with Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org'>rapi@bernie2016events.org</a></span>
+    &copy; <a href='http://www.reddit.com/r/SandersForPresident' style='display: inline-block'>Grassroots for Sanders 2016</a> &bull; <a href='https://docs.google.com/forms/d/1TMrM4xFagI7SqzSD5qr2VPGUlV9jopisNOnecYq9Cgc/viewform?edit_requested=true' target='_blank' style='display: inline-block'>Join our Call Team</a> &bull; This site is not affiliated with Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org' >rapi@bernie2016events.org</a></span>
   </footer>
   <script src="/js/d3.js" charset="utf-8"></script>
   <script type='text/javascript' src='js/jquery.js'></script>
@@ -116,13 +116,19 @@
             .data(dataToShow, function(d) { return d.url; }); /* set url as ID */
 
             items.enter()
-              .append("div").classed("item", true)
+              .append("div")
+                .classed("item", true)
+                .classed("is-new", function(d) { return d.isNew;})
                 .html(function(d, i) {
                   var html = "<div class='site-image' style='background-image: url(" + d.image+ ")'><a class='lato' target='_blank' href='" + d.url +"'></a></div>"
                       + "<div class='content'>"
                       + "<h2 class='neuton'><a target='_blank' href='" +d.url+  "'>" + d.title + "</a></h2>"
                       + "<p class='lato'>" + d.description + "</p>"
                       + "<a class='lato' href='" + d.url +"' target='_blank'>Go to site</a>";
+
+                  if (d.isNew) {
+                    html = "<div class='is-new-tag'>New!</div>" + html;
+                  };
                       return html;
                 });
 
@@ -131,6 +137,8 @@
                 d3.select(this).transition().style("opacity", 0)
                   .each("end", function() { d3.select(this).remove(); });
               });
+
+
 
         var columns = [];
 
@@ -196,10 +204,20 @@
            phonebank: d.phonebank == "1",
            comms: d.comms == "1",
            games: d.games == "1",
+           isNew: d.isNew == "1"
           };
         },
         function(err,data) {
           that.data = data;
+
+          //Push new items to the top
+          var newItems = [];
+          for(var i = that.data.length-1; i > 0; i--) {
+            if (that.data[i].isNew) { newItems.push(that.data.splice(i,1)[0]); }
+          }
+          that.data = newItems.concat(that.data);
+
+
           that.render(this._currentFilter);
 
           d3.select("#loader").remove();
