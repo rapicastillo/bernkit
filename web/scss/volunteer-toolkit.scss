@@ -21,6 +21,26 @@ body {
 
   }
 
+  .fb-share-button {
+    display: inline-block;
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+
+    a {
+      padding: 4px 6px;
+      background-color: $bernieblue;
+      border-radius: 3px;
+      display: inline-block;
+      color: white;
+      font-weight: 400;
+      font-size: 12px;
+      margin-right: 1px;
+      &:hover {
+        background-color: $darkblue;
+      }
+    }
+  }
+
   text-align: center;
   #main-container {
     width: 1100px;

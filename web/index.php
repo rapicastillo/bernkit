@@ -11,15 +11,15 @@
 <link href='https://fonts.googleapis.com/css?family=Neuton:400,700,800|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
 <body>
-  <div id="fb-root"></div>
   <script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1619513324978096";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  // (function(d, s, id) {
+  //   var js, fjs = d.getElementsByTagName(s)[0];
+  //   if (d.getElementById(id)) return;
+  //   js = d.createElement(s); js.id = id;
+  //   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1619513324978096";
+  //   fjs.parentNode.insertBefore(js, fjs);
+  // }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div id='main-container'>
     <div id='title-hero'>
       <h1 class='neuton'>Bernie's Volunteer Toolkit</h1>
@@ -52,7 +52,8 @@
     </div>
   </div>
   <footer class='lato'>
-    <div class="fb-share-button" data-href="http://www.bernkit.com/" data-layout="button"></div>&nbsp;<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.bernkit.com" data-text="All the online tools you can use to make Bernie the next president of these United States #feelthebern">Tweet</a>&nbsp;
+    <div class="fb-share-button" data-href="http://www.bernkit.com/" data-layout="button">
+      <a href="javascript:fbShare('http://www.bernkit.com/', 'Fb Share', 'Facebook share popup', 'http://www.bernkit.com/img/fb.png', 520, 350)">Share</a></div>&nbsp;<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.bernkit.com" data-text="All the online tools you can use to make Bernie the next president of these United States #feelthebern">Tweet</a>&nbsp;
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <a href='http://www.berniesanders.com/donate' class='donate-button'>Donate</a>
@@ -292,4 +293,11 @@
     ga('send', 'pageview');
 
   </script>
+<script>
+    function fbShare(url, title, descr, image, winWidth, winHeight) {
+        var winTop = (screen.height / 2) - (winHeight / 2);
+        var winLeft = (screen.width / 2) - (winWidth / 2);
+        window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+    }
+</script>
 </body>

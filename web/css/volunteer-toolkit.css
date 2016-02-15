@@ -63,6 +63,21 @@ body {
       font-weight: 600; }
       body a.donate-button:hover {
         background-color: #F10E0E; }
+  body .fb-share-button {
+    display: inline-block;
+    font-family: 'lato', sans-serif;
+    font-weight: bold; }
+    body .fb-share-button a {
+      padding: 4px 6px;
+      background-color: #147FD7;
+      border-radius: 3px;
+      display: inline-block;
+      color: white;
+      font-weight: 400;
+      font-size: 12px;
+      margin-right: 1px; }
+      body .fb-share-button a:hover {
+        background-color: #00559B; }
   body #main-container {
     width: 1100px;
     text-align: left;
