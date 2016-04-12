@@ -1,23 +1,11 @@
-# php-getting-started
+# BernKit.com 
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
+Deployed in Heroku, on PHP
 
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+# Run
 
-## Deploying
+$ php -S localhost:8080
 
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+# Details
 
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+Takes data from https://docs.google.com/spreadsheets/d/1T09be8U1qmDF0qJ5QB0xFE4pwikknUpy4MMN6Hrpcb4
