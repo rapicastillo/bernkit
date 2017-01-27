@@ -4,15 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 // TODO: Change title
-<title>Bernie's Volunteer Toolkit - All the online tools you can use to help make Bernie the next president of these United States. Pick and choose, volunteer, feel the bern! Don't see your app?</title>
+<title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your app? Add it now.</title>
 // TODO: Change image
 <meta property="og:image" content="http://www.bernkit.com/img/fb.png" />
 <meta property="og:url" content="http://www.revolutionkit.us" />
 // TODO: Change this title
-<meta property="og:title" content="Bernie's Volunteer Toolkit"/>
+<meta property="og:title" content="Political Revolution Volunteer Toolkit"/>
 // TODO: Change description
-<meta property="og:description" content="Bernie's Volunteer Toolkit - BernKit - All the online tools you can use to help make Bernie the next president of these United States. Pick and choose, volunteer, feel the bern! Don't see your app?"/>
-<link href='https://fonts.googleapis.com/css?family=Neuton:400,700,800|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+<meta property="og:description" content="Political Revolution Volunteer Toolkit - Revolution Kit - The Political Revolution's one stop for digital tools. Don't see your app?"/>
+<link href='https://fonts.googleapis.com/css?family=Work Sans:400,700,800|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 // TODO: Color scheme
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
 <body>
@@ -28,8 +28,8 @@
   <div id='main-container'>
     <div id='title-hero'>
       // TODO: Change H1 and H3 text
-      <h1 class='neuton'>Bernie's Volunteer Toolkit</h1>
-      <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to help make Bernie the next president of these United States.<br/>Take your pick, volunteer, feel the bern! Don't see your app? <a href='http://goo.gl/forms/q0T8FscLYv' target='_blank'>Submit it here.</a></h3>
+      <h1 class='neuton'>Political Revolution Volunteer Toolkit</h1>
+      <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to help progressives win throughout the United States.<br/>Take your pick, volunteer, feel the bern! Don't see your app? <a href='http://goo.gl/forms/q0T8FscLYv' target='_blank'>Submit it here.</a></h3>
     </div>
     <div id='filters'>
       <form id='toolkit-filters'>
@@ -64,7 +64,7 @@
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     // TODO: Keep/change donate?
-    <a href='http://www.berniesanders.com/donate' class='donate-button'>Donate</a>
+    <a href='http://www.political-revolution.com/donate' class='donate-button'>Donate</a>
     <span>&nbsp;&nbsp;&nbsp;
       // TODO: Correct copywrite? Do we want a replacement for the call form? Who should be the contact person and email?
     &copy; <a href='http://www.reddit.com/r/political_revolution' style='display: inline-block'>Political Revolution</a> &bull; <a href='https://docs.google.com/forms/d/1TMrM4xFagI7SqzSD5qr2VPGUlV9jopisNOnecYq9Cgc/viewform?edit_requested=true' target='_blank' style='display: inline-block'>Join our Call Team</a> &bull; This site is not affiliated with Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org' >rapi@bernie2016events.org</a></span>
