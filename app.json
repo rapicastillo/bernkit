@@ -1,6 +1,6 @@
 {
-  "name": "PHP Getting Started",
-  "description": "A barebones PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
+  "name": "Political Revolution Volunteer Toolkit",
+  "description": "A repository of volunteer tools for the Political Revolution",
+  "repository": "https://github.com/politicalrev/RevolutionKit",
   "addons": []
 }
