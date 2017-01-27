@@ -3,15 +3,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-// TODO: Change title
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your app? Add it now.</title>
 // TODO: Change image
 <meta property="og:image" content="http://www.bernkit.com/img/fb.png" />
 <meta property="og:url" content="http://www.revolutionkit.us" />
-// TODO: Change this title
 <meta property="og:title" content="Political Revolution Volunteer Toolkit"/>
-// TODO: Change description
-<meta property="og:description" content="Political Revolution Volunteer Toolkit - Revolution Kit - The Political Revolution's one stop for digital tools. Don't see your app?"/>
+<meta property="og:description" content="Political Revolution Volunteer Toolkit - Revolution Kit - The Political Revolution's one stop for digital tools. Don't see your app? Add it now."/>
 <link href='https://fonts.googleapis.com/css?family=Work Sans:400,700,800|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 // TODO: Color scheme
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
@@ -27,9 +24,8 @@
   </script>
   <div id='main-container'>
     <div id='title-hero'>
-      // TODO: Change H1 and H3 text
       <h1 class='neuton'>Political Revolution Volunteer Toolkit</h1>
-      <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to help progressives win throughout the United States.<br/>Take your pick, volunteer, feel the bern! Don't see your app? <a href='http://goo.gl/forms/q0T8FscLYv' target='_blank'>Submit it here.</a></h3>
+      <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to help progressives win throughout the United States.<br/>Take your pick, volunteer, feel the bern! Don't see your app? <a href='https://docs.google.com/forms/d/1UAizvRCcYD13byAAMarLpYs-OC8hLfQSgXLkKXbdjZ4/viewform' target='_blank'>Submit it here.</a></h3>
     </div>
     <div id='filters'>
       <form id='toolkit-filters'>
@@ -37,7 +33,7 @@
           <li class='lato'><input type='radio' name='f' value='All' id='All' checked="checked"/>
             <label for='All'>All</label></li>
           <li class='lato'><input type='radio' name='f' value='Official' id='Official'/>
-            <label for='Official'>Official</label></li>
+            <label for='Official'>Official</label></li>f
           <li class='lato'><input type='radio' name='f' value='Information' id='Information'/>
             <label for='Information'>Information</label></li>
           <li class='lato'><input type='radio' name='f' value='Activism' id='Activism'/>
@@ -63,7 +59,6 @@
       <a href="javascript:fbShare('http://www.bernkit.com/', 'Fb Share', 'Facebook share popup', 'http://www.bernkit.com/img/fb.png', 520, 350)">Share</a></div>&nbsp;<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://www.bernkit.com" data-text="All the online tools you can use to make Bernie the next president of these United States #feelthebern">Tweet</a>&nbsp;
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    // TODO: Keep/change donate?
     <a href='http://www.political-revolution.com/donate' class='donate-button'>Donate</a>
     <span>&nbsp;&nbsp;&nbsp;
       // TODO: Correct copywrite? Do we want a replacement for the call form? Who should be the contact person and email?
@@ -196,8 +191,7 @@
 
       };
 
-
-      this.initialize = function() {
+     this.initialize = function() {
         var that = this;
         d3.csv(that.DATA_URL,
         function(d) {
