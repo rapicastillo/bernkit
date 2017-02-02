@@ -62,7 +62,7 @@
     <a href='http://www.political-revolution.com/donate' class='donate-button'>Donate</a>
     <span>&nbsp;&nbsp;&nbsp;
       // TODO: Correct copywrite? Do we want a replacement for the call form? Who should be the contact person and email?
-    &copy; <a href='http://www.reddit.com/r/political_revolution' style='display: inline-block'>Political Revolution</a> &bull; <a href='https://docs.google.com/forms/d/1TMrM4xFagI7SqzSD5qr2VPGUlV9jopisNOnecYq9Cgc/viewform?edit_requested=true' target='_blank' style='display: inline-block'>Join our Call Team</a> &bull; This site is not affiliated with Bernie 2016 campaign. Contact <a href='mailto:rapi@bernie2016events.org' >rapi@bernie2016events.org</a></span>
+    &copy; <a href='http://www.reddit.com/r/political_revolution' style='display: inline-block'>Political Revolution</a> &bull; Contact <a href='mailto:tech@political-revolution.com' >tech@political-revolution.com</a></span>
   </footer>
   <script src="/js/d3.js" charset="utf-8"></script>
   <script type='text/javascript' src='js/jquery.js'></script>
