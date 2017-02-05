@@ -1,5 +1,7 @@
 <!doctype html>
 
+<!-- TODO: Facebook share has wrong description -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your
@@ -38,7 +40,6 @@
           <label for='All'>All</label></li>
         <li class='lato'><input type='radio' name='f' value='Official' id='Official'/>
           <label for='Official'>Official</label></li>
-        f
         <li class='lato'><input type='radio' name='f' value='Information' id='Information'/>
           <label for='Information'>Information</label></li>
         <li class='lato'><input type='radio' name='f' value='Activism' id='Activism'/>
@@ -64,7 +65,7 @@
     <a href="javascript:fbShare('http://www.revolutionkit.us', 'Fb Share', 'Facebook share popup', 'http://www.bernkit.com/img/fb.png', 520, 350)">Share</a>
   </div>
   &nbsp;
-  <!--- // TODO: Need a hashtag here --->
+  <!--- // TODO: Need a hashtag here: Max 28 characters left -->
   <a href="https://twitter.com/share" class="twitter-share-button" {count} data-url="http://www.revolutionkit.us"
      data-text="All the online tools you can use to help progressives win throughout the United States. #feelthebern">Tweet</a>&nbsp;
   <script>
