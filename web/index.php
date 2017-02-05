@@ -6,8 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your
   app? Add it now.</title>
-<!--- TODO: Change image, need this to be populated and then take a screenshot --->
-<meta property="og:image" content="http://www.bernkit.com/img/fb.png"/>
+<meta property="og:image" content="http://www.revolutionkit.us/img/fb.png"/>
 <meta property="og:url" content="http://www.revolutionkit.us"/>
 <meta property="og:title" content="Political Revolution Volunteer Toolkit"/>
 <meta property="og:description"
@@ -51,9 +50,8 @@
   </div>
 </div>
 <footer class='lato'>
-  <!--- TODO: Get a image for the FB share. --->
   <div class="fb-share-button" data-href="http://www.revolutionkit.us" data-layout="button">
-    <a href="javascript:fbShare('http://www.revolutionkit.us', 'Fb Share', 'Facebook share popup', 'http://www.bernkit.com/img/fb.png', 520, 350)">Share</a>
+    <a href="javascript:fbShare('http://www.revolutionkit.us', 'Fb Share', 'Facebook share popup', 'http://www.revolutionkit.us/img/fb.png', 520, 350)">Share</a>
   </div>
   &nbsp;
   <a href="https://twitter.com/share" class="twitter-share-button" {count} data-url="http://www.revolutionkit.us"
