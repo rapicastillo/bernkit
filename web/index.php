@@ -6,15 +6,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your
   app? Add it now.</title>
-<meta property="og:image" content="http://www.revolutionkit.us/img/fb.png"/>
+
+<meta property="og:image" content="http://i.imgur.com/Ce69NVx.jpg"/>
 <meta property="og:url" content="http://www.revolutionkit.us"/>
-<meta property="og:title" content="Political Revolution Volunteer Toolkit"/>
-<meta property="og:description"
-      content="Political Revolution Volunteer Toolkit - Revolution Kit - The Political Revolution's one stop for digital tools. Don't see your app? Add it now."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Revolution Toolkit | Tools for a Political Revolution"/>
+<meta property="og:description" content="Resistance Ready Apps and Resources"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ourpoliticalrev">
+<meta name="twitter:creator" content="@ourpoliticalrev">
+<meta name="twitter:title" content="Revolution Toolkit | Tools for a Political Revolution">
+<meta name="twitter:description" content="Resistance Ready Apps and Resources">
+<meta name="twitter:image" content="http://i.imgur.com/Ce69NVx.jpg">
+
 <link href='https://fonts.googleapis.com/css?family=Work Sans:400,700,800|Lato:400,300,100,700' rel='stylesheet'
       type='text/css'>
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
+
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
 <div id='main-container'>
   <div id='title-hero'>
     <h1 class='neuton'>Political Revolution Volunteer Toolkit</h1>
@@ -50,9 +68,7 @@
   </div>
 </div>
 <footer class='lato'>
-  <div class="fb-share-button" data-href="http://www.revolutionkit.us" data-layout="button">
-    <a href="javascript:fbShare('http://www.revolutionkit.us', 'Fb Share', 'Facebook share popup', 'http://www.revolutionkit.us/img/fb.png', 520, 350)">Share</a>
-  </div>
+  <div class="fb-share-button" data-href="http://revolutionkit.us" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frevolutionkit.us%2F&amp;src=sdkpreparse">Share</a></div>
   &nbsp;
   <a href="https://twitter.com/share" class="twitter-share-button" {count} data-url="http://www.revolutionkit.us"
      data-text="All the online tools you can use to help progressives win throughout the United States. #PolRev">Tweet</a>&nbsp;
@@ -318,12 +334,5 @@
     }
 
   })(jQuery, window);
-</script>
-<script>
-  function fbShare(url, title, descr, image, winWidth, winHeight) {
-    var winTop = (screen.height / 2) - (winHeight / 2);
-    var winLeft = (screen.width / 2) - (winWidth / 2);
-    window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
-  }
 </script>
 </body>
