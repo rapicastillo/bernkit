@@ -16,20 +16,11 @@
       type='text/css'>
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
 <body>
-<script>
-  // (function(d, s, id) {
-  //   var js, fjs = d.getElementsByTagName(s)[0];
-  //   if (d.getElementById(id)) return;
-  //   js = d.createElement(s); js.id = id;
-  //   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1619513324978096";
-  //   fjs.parentNode.insertBefore(js, fjs);
-  // }(document, 'script', 'facebook-jssdk'));
-</script>
 <div id='main-container'>
   <div id='title-hero'>
     <h1 class='neuton'>Political Revolution Volunteer Toolkit</h1>
     <h3 class='neuton'>All the online tools <span style='font-weight: 600'>you</span> can use to help progressives win
-      throughout the United States.<br/>Take your pick, volunteer, feel the bern! Don't see your app? <a
+      throughout the United States.<br/>Take your pick, volunteer! Don't see your app? <a
           href='https://docs.google.com/forms/d/1UAizvRCcYD13byAAMarLpYs-OC8hLfQSgXLkKXbdjZ4/viewform' target='_blank'>Submit
         it here.</a></h3>
   </div>
@@ -65,9 +56,8 @@
     <a href="javascript:fbShare('http://www.revolutionkit.us', 'Fb Share', 'Facebook share popup', 'http://www.bernkit.com/img/fb.png', 520, 350)">Share</a>
   </div>
   &nbsp;
-  <!--- // TODO: Need a hashtag here: Max 28 characters left -->
   <a href="https://twitter.com/share" class="twitter-share-button" {count} data-url="http://www.revolutionkit.us"
-     data-text="All the online tools you can use to help progressives win throughout the United States. #feelthebern">Tweet</a>&nbsp;
+     data-text="All the online tools you can use to help progressives win throughout the United States. #PolRev">Tweet</a>&nbsp;
   <script>
     !function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -330,23 +320,6 @@
     }
 
   })(jQuery, window);
-</script>
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-72356506-1', 'auto');
-  ga('send', 'pageview');
-  // TODO: Analytics?
 </script>
 <script>
   function fbShare(url, title, descr, image, winWidth, winHeight) {
