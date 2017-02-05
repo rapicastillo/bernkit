@@ -1,7 +1,3 @@
-# BernKit.com 
 
-Deployed in Heroku, on PHP
 
-# Run
-
-$ php -S localhost:8080
+Forked from the original BernKit created by Rapi Castillo for the Bernie Sanders primary run.
