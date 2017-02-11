@@ -1,7 +1,5 @@
 <!doctype html>
 
-<!-- TODO: Facebook share has wrong description -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your
