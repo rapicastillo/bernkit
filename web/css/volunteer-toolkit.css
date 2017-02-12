@@ -52,6 +52,10 @@ body {
     font-family: 'Lato', sans-serif; }
   body .neuton {
     font-family: 'Work Sans', serif; }
+    body .neuton a {
+      text-decoration: underline;
+      color: #bc3f41;
+      font-weight: 700; }
   body a {
     text-decoration: none;
     color: #04243E; }
