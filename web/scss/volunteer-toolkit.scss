@@ -3,14 +3,22 @@
 @import 'include/variables';
 
 body {
-  background-color: whitesmoke;
+  background-color: #e4ecf1;
   .lato { font-family: 'Lato', sans-serif; }
-  .neuton { font-family: 'Neuton', serif; }
+  .neuton {
+    font-family: 'Work Sans', serif;
 
-  a { text-decoration: none; color: $bernieblue;
+    a {
+      text-decoration: none;
+      color: #bc3f41 ;
+      font-weight: 700;
+    }
+  }
+
+  a { text-decoration: none; color: $blueunity;
 
     &.donate-button {
-      background-color: #F55B5B;
+      background-color: $revolutionred;
       color: white;
       padding: 4px 8px 3px 8px;
       border-radius: 3px;
@@ -28,7 +36,7 @@ body {
 
     a {
       padding: 4px 6px;
-      background-color: $bernieblue;
+      background-color: $blueunity;
       border-radius: 3px;
       display: inline-block;
       color: white;
@@ -36,7 +44,7 @@ body {
       font-size: 12px;
       margin-right: 1px;
       &:hover {
-        background-color: $darkblue;
+        background-color: $revolutionred;
       }
     }
   }
@@ -53,11 +61,18 @@ body {
     }
   }
 
-
   #title-hero {
     text-align: center;
-    h1 { font-size: 72px; font-weight: 800;}
-    h3 { font-size: 24px; font-weight: 400; }
+    h1 {
+      font-size: 42px;
+      font-weight: 600;
+      padding-top: 20px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 20px;
+    }
   }
   #filters {
     margin-top: 20px;
@@ -88,9 +103,9 @@ body {
         }
       }
       input[type=radio]:checked + label, input[type=radio]:checked + label:hover {
-        background-color: $bernieblue;
+        background-color: $blueunity;
         color: white;
-        border-color: $darkblue;
+        border-color: $revolutionred;
       }
     }
   } // end of filters
@@ -168,13 +183,13 @@ body {
           a {
             text-decoration: none;
             font-weight: 300;
-            color: $darkblue;
+            color: $revolutionred;
 
             &:hover { text-decoration: underline; }
           }
         }
         p { line-height: 1.25; margin-bottom: 10px; font-size: 14px;}
-        a { color: $darkblue; text-decoration: none; &:hover{ text-decoration: underline;} }
+        a { color: $revolutionred; text-decoration: none; &:hover{ text-decoration: underline;} }
       }
     }
   }// end of canvas-area
