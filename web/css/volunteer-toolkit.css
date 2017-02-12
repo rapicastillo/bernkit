@@ -53,7 +53,7 @@ body {
   body .neuton {
     font-family: 'Work Sans', serif; }
     body .neuton a {
-      text-decoration: underline;
+      text-decoration: none;
       color: #bc3f41;
       font-weight: 700; }
   body a {
