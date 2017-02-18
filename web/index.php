@@ -98,7 +98,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }
     }(document, 'script', 'twitter-wjs');</script>
-  <a href='http://www.political-revolution.com/donate' class='donate-button'>Donate</a>
+  <a href='https://secure.actblue.com/contribute/page/the-politicalrevolution?refcode=revkit' class='donate-button'>Donate</a>
   <span>&nbsp;&nbsp;&nbsp;
     &copy; <a href='http://www.reddit.com/r/political_revolution'
               style='display: inline-block'>Political Revolution</a> &bull; Contact <a
