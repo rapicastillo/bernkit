@@ -70,8 +70,8 @@
           <label for='Activism'>Activism</label></li>
         <li class='lato'><input type='radio' name='f' value='Voting' id='Voting'/>
           <label for='Voting'>Voting</label></li>
-        <li class='lato'><input type='radio' name='f' value='Phonebank' id='Phonebank'/>
-          <label for='Phonebank'>Phonebank</label></li>
+        <li class='lato'><input type='radio' name='f' value='Calling' id='Calling'/>
+          <label for='Calling'>Calling</label></li>
         <li class='lato'><input type='radio' name='f' value='PoliticalGroups' id='PoliticalGroups'/>
           <label for='PoliticalGroups'>Political Groups</label></li>
         <li class='lato'><input type='radio' name='f' value='Games' id='Games'/>
@@ -159,8 +159,8 @@
                 return d.activism;
               case 'Voting':
                 return d.voting;
-              case 'Phonebank':
-                return d.phonebank;
+              case 'Calling':
+                return d.calling;
               case 'PoliticalGroups':
                 return d.polgroups;
               case 'Games':
@@ -266,7 +266,7 @@
               info: d.info == "1",
               activism: d.activism == "1",
               voting: d.voting == "1",
-              phonebank: d.phonebank == "1",
+              calling: d.calling == "1",
               polgroups: d.polgroups == "1",
               games: d.games == "1",
               isNew: d.isNew == "1"
