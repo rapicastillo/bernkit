@@ -5,7 +5,7 @@
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your
   app? Add it now.</title>
 
-<meta property="og:image" content="http://i.imgur.com/Ce69NVx.jpg"/>
+<meta property="og:image" content="http://i.imgur.com/i523BDS.jpg"/>
 <meta property="og:url" content="http://www.revolutionkit.us"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Revolution Toolkit | Tools for a Political Revolution"/>
@@ -15,11 +15,29 @@
 <meta name="twitter:creator" content="@ourpoliticalrev">
 <meta name="twitter:title" content="Revolution Toolkit | Tools for a Political Revolution">
 <meta name="twitter:description" content="Resistance Ready Apps and Resources">
-<meta name="twitter:image" content="http://i.imgur.com/Ce69NVx.jpg">
+<meta name="twitter:image" content="http://i.imgur.com/i523BDS.jpg">
 
 <link href='https://fonts.googleapis.com/css?family=Work Sans:400,700,800|Lato:400,300,100,700' rel='stylesheet'
       type='text/css'>
 <link href='./css/volunteer-toolkit.css' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/iconandroid-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="img/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 <body>
 <div id="fb-root"></div>
@@ -52,8 +70,8 @@
           <label for='Activism'>Activism</label></li>
         <li class='lato'><input type='radio' name='f' value='Voting' id='Voting'/>
           <label for='Voting'>Voting</label></li>
-        <li class='lato'><input type='radio' name='f' value='Phonebank' id='Phonebank'/>
-          <label for='Phonebank'>Phonebank</label></li>
+        <li class='lato'><input type='radio' name='f' value='Calling' id='Calling'/>
+          <label for='Calling'>Calling</label></li>
         <li class='lato'><input type='radio' name='f' value='PoliticalGroups' id='PoliticalGroups'/>
           <label for='PoliticalGroups'>Political Groups</label></li>
         <li class='lato'><input type='radio' name='f' value='Games' id='Games'/>
@@ -80,7 +98,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }
     }(document, 'script', 'twitter-wjs');</script>
-  <a href='http://www.political-revolution.com/donate' class='donate-button'>Donate</a>
+  <a href='https://secure.actblue.com/contribute/page/the-politicalrevolution?refcode=revkit' class='donate-button'>Donate</a>
   <span>&nbsp;&nbsp;&nbsp;
     &copy; <a href='http://www.reddit.com/r/political_revolution'
               style='display: inline-block'>Political Revolution</a> &bull; Contact <a
@@ -141,8 +159,8 @@
                 return d.activism;
               case 'Voting':
                 return d.voting;
-              case 'Phonebank':
-                return d.phonebank;
+              case 'Calling':
+                return d.calling;
               case 'PoliticalGroups':
                 return d.polgroups;
               case 'Games':
@@ -248,7 +266,7 @@
               info: d.info == "1",
               activism: d.activism == "1",
               voting: d.voting == "1",
-              phonebank: d.phonebank == "1",
+              calling: d.calling == "1",
               polgroups: d.polgroups == "1",
               games: d.games == "1",
               isNew: d.isNew == "1"
