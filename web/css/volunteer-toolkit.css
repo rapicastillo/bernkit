@@ -46,17 +46,21 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: whitesmoke;
+  background-color: #e4ecf1;
   text-align: center; }
   body .lato {
     font-family: 'Lato', sans-serif; }
   body .neuton {
-    font-family: 'Neuton', serif; }
+    font-family: 'Work Sans', serif; }
+    body .neuton a {
+      text-decoration: none;
+      color: #bc3f41;
+      font-weight: 700; }
   body a {
     text-decoration: none;
-    color: #147FD7; }
+    color: #04243E; }
     body a.donate-button {
-      background-color: #F55B5B;
+      background-color: #BC3F41;
       color: white;
       padding: 4px 8px 3px 8px;
       border-radius: 3px;
@@ -69,7 +73,7 @@ body {
     font-weight: bold; }
     body .fb-share-button a {
       padding: 4px 6px;
-      background-color: #147FD7;
+      background-color: #04243E;
       border-radius: 3px;
       display: inline-block;
       color: white;
@@ -77,7 +81,7 @@ body {
       font-size: 12px;
       margin-right: 1px; }
       body .fb-share-button a:hover {
-        background-color: #00559B; }
+        background-color: #BC3F41; }
   body #main-container {
     width: 1100px;
     text-align: left;
@@ -88,11 +92,13 @@ body {
   body #title-hero {
     text-align: center; }
     body #title-hero h1 {
-      font-size: 72px;
-      font-weight: 800; }
+      font-size: 42px;
+      font-weight: 600;
+      padding-top: 20px; }
     body #title-hero h3 {
-      font-size: 24px;
-      font-weight: 400; }
+      font-size: 20px;
+      font-weight: 400;
+      padding-top: 20px; }
   body #filters {
     margin-top: 20px;
     text-align: center; }
@@ -125,9 +131,9 @@ body {
         body #filters ul li label:hover {
           background-color: #FFF3CD; }
       body #filters ul li input[type=radio]:checked + label, body #filters ul li input[type=radio]:checked + label:hover {
-        background-color: #147FD7;
+        background-color: #04243E;
         color: white;
-        border-color: #00559B; }
+        border-color: #BC3F41; }
   body #canvas-area {
     position: relative;
     padding-bottom: 80px; }
@@ -204,7 +210,7 @@ body {
           body #canvas-area .item div.content h2 a {
             text-decoration: none;
             font-weight: 300;
-            color: #00559B; }
+            color: #BC3F41; }
             body #canvas-area .item div.content h2 a:hover {
               text-decoration: underline; }
         body #canvas-area .item div.content p {
@@ -212,7 +218,7 @@ body {
           margin-bottom: 10px;
           font-size: 14px; }
         body #canvas-area .item div.content a {
-          color: #00559B;
+          color: #BC3F41;
           text-decoration: none; }
           body #canvas-area .item div.content a:hover {
             text-decoration: underline; }
