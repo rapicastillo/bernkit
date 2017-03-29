@@ -5,7 +5,7 @@
 <title>Political Revolution Volunteer Toolkit - The Political Revolution's one stop for digital tools. Don't see your
   app? Add it now.</title>
 
-<meta property="og:image" content="http://i.imgur.com/Ce69NVx.jpg"/>
+<meta property="og:image" content="http://i.imgur.com/i523BDS.jpg"/>
 <meta property="og:url" content="http://www.revolutionkit.us"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Revolution Toolkit | Tools for a Political Revolution"/>
@@ -15,7 +15,7 @@
 <meta name="twitter:creator" content="@ourpoliticalrev">
 <meta name="twitter:title" content="Revolution Toolkit | Tools for a Political Revolution">
 <meta name="twitter:description" content="Resistance Ready Apps and Resources">
-<meta name="twitter:image" content="http://i.imgur.com/Ce69NVx.jpg">
+<meta name="twitter:image" content="http://i.imgur.com/i523BDS.jpg">
 
 <link href='https://fonts.googleapis.com/css?family=Work Sans:400,700,800|Lato:400,300,100,700' rel='stylesheet'
       type='text/css'>
